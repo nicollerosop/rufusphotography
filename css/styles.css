@@ -1,0 +1,324 @@
+/* generales */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.contenedor{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* naver, header*/
+nav{
+    background-color: black;
+    padding: 15px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: 'Raleway', serif;
+}
+nav .intro:hover{
+    background-color: #7ABD70;
+    color: white;
+    padding: 10px;
+    font-weight: 600;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header a{
+    padding: 20px;
+}
+
+/*section: banner*/
+.banner{
+    padding: 20px;
+    background-image: url(../img/calle-portada.jpg);
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+}
+.texto-intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: 300px;
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, 0.685);
+}
+.bannerpic{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Raleway', serif;
+}
+.description{
+    font-size: 17px;
+    font-weight: 200;
+    margin: 5px;
+    font-family: 'Zilla Slab', serif;
+}
+
+
+/*buttons*/
+.button1, .button2{
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Raleway', serif;
+    font-size: 15px;
+}
+.button1{    
+    background-color: white;
+    color: black;
+    margin: 10px;
+    padding: 5px;
+}
+.button1:hover{
+    background-color: #7ABD70;
+    color: white;
+}
+.button2{
+    background-color: #7ABD70;
+    color: white;
+    padding: 5px
+}
+.button2:hover{
+    border: solid 1px white;
+    color: white;
+    background-color: black;
+}
+.gallery a:hover{
+    filter: sepia(50%);
+}
+
+
+/*flexs*/
+.flex1, .flex2, .flex3, .flex5{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.flex1{
+    justify-content: center;
+    align-items: center;   
+}
+.flex6, .gallery{
+    display: flex;
+    flex-wrap: wrap;    
+}
+.flex1 article{
+    width: 50%;
+    padding: 100px;
+}
+.flex2 div{
+    width: 25%;
+    padding: 20px;
+}
+.flex2 article{
+    margin: 15px 25px 0 0;
+}
+.flex3 div{
+    width: 33.3333%;
+    padding: 0 20px;
+}
+.flex3 article{
+    text-align: center;
+    padding: 20px 30px;
+}
+.flex5 article, .flex6 div{
+    width: 50%;
+}
+
+
+/*IMG*/
+img{
+    max-width: 100%;
+}
+nav img{
+    max-height: 50px;
+}
+.flex1  img{
+    max-height: 350px;
+    max-width: fit-content;
+}
+.flex2 img{
+    max-height: 370px;
+    max-width: fit-content;
+}
+.flex6 img{
+    max-height: 350px;
+    margin-left: 50px;   
+}
+.gallery a{
+    width: 33.3333%;
+}
+
+
+
+
+/* h, span y p*/
+.S2 h1{
+    font-family: 'Raleway', serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: black;
+}
+.S5 h1{
+    font-family: 'Raleway', serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #7ABD70;
+    margin: 30px 0 20px 0;
+    text-align: center;
+}
+h2{
+    padding: 50px 0px 15px 0px;
+    font-family: 'Raleway', serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.S3 h2{
+    color: #7ABD70;
+    text-align: center;
+}
+.S4 h2{
+    color: black;
+    text-align: center;
+}
+.S6 h2{
+    color: black;
+}
+.S7 h2{
+    color: #7ABD70;
+    margin-bottom: 30px;
+    text-align: center;   
+}
+h3{
+    padding: 10px 0px;
+    font-family: 'Raleway', serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+.S3 h3{
+    color: white;
+}
+.S4 h3{
+    color: black;
+}
+h4{    
+    font-family: 'Raleway', serif;
+    color: #7ABD70
+}
+.S2 span{
+    font-family: 'Zilla Slab', serif;
+    font-weight: 700;
+    font-size: 17px;
+}
+.titleS3 span{
+    font-family: 'Raleway', serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+p{
+    font-family: 'Zilla Slab', serif;
+}
+.flex1 p{
+    padding: 15px 0;
+   }
+.alineaciones p{
+    margin-top: 10px;
+    color: white;
+}
+.flex3 p{
+    margin-bottom: 20px;
+}
+.flex5 p{
+    margin-bottom: 5px;
+}
+
+
+/* lista*/
+.lista{
+    margin: 10px 30px;
+    font-family: 'Zilla Slab', serif;
+    color: black
+}
+.lista li{
+    padding: 10px;
+}
+
+
+
+/*detalles en sections y divs*/
+.S3{
+    background-color: black;
+    padding: 20px;
+}
+.S3 .alineaciones{
+    display: block
+}
+.S3 .titleS3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.S5 span{
+    font-family: 'Raleway', serif;
+    font-size: 19px;
+}
+.rainy-night{
+    text-align: center;
+}
+.S6{
+    padding: 30px 0;
+}
+.test{
+    padding: 20px;
+    background-image: url(../img/lluvia-portada.jpg);
+    background-size: cover;
+    height: 450px;
+    background-position: center;
+}
+.S7{
+    background-color: black;
+    padding-bottom: 65px;
+}
+
+
+
+/* footer */
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 30px 0;
+}
+.final{
+    font-family: 'Raleway', serif;
+    font-weight: 700;
+    font-size: 10px;
+    color: #7ABD70;
+    text-decoration: underline solid black;
+}
+footer img{
+    max-height: 30px;
+    max-width: fit-content;
+    margin: 5px;
+}
+.final:hover{
+    text-decoration: underline solid black;
+    padding: 5px;
+    color: white;
+    
+}
+
